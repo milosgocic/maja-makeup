@@ -1,0 +1,255 @@
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+body {
+    font-size: 16px;
+}
+a {
+    color: #000;
+    padding-right: 10px;
+}
+a:link {
+    text-decoration: none;
+    color: #000;
+}
+a:hover {
+    text-decoration: none;
+    color: #000;
+}
+/***  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), ***/
+
+/*****************************/
+/*** first page navigation ***/
+/*****************************/
+
+.backimage {
+    background-image: url("../images/home1.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+}
+.main-nav ul {
+    list-style: none;
+}
+.main-nav ul li {
+    display: inline-block;
+}
+.imglogo {
+    width: 15%;
+    height: 15%;
+    margin-top: 30px;
+}
+.nav-bar {
+    color: #000;
+    margin-top: 50px;
+}
+.nav-bar li a:link,
+.nav-bar li a:visited {
+    color: #000;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+    padding: 5px 0px;
+}
+.nav-bar li a:active,
+.nav-bar li a:hover {
+    color: #000;
+    border-bottom: 2px solid #000;
+    transition: border-bottom 0.3s;
+}
+.nav-bar li {
+    padding-right: 50px;
+}
+
+/************************/
+/*** second page photos ***/
+/*************************/
+
+.wall {
+    background-image: linear-gradient(rgba(183, 183, 183, 0.9), rgba(255, 255, 255, 0.9));
+    
+} 
+
+h1 {
+    padding: 80px;
+    text-align: center;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+ 
+}
+h1:before { content:"\2014";}
+h1:after { content:"\2014";}
+.center {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.photos {
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    box-shadow: 5px 5px 25px #000;
+
+}
+
+/*******************************/
+/*** footer ***/
+/*******************************/
+
+.footer {
+    background-image: url("../images/cover.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.center-footer {
+    text-align: center;
+}
+.center-footer p {
+    padding-top: 40px;
+}
+.center-footer-icons {
+    text-align: center;
+    padding-top: 30px;
+}
+address {
+    padding-top: 30px;
+    font-style: italic;
+    text-align: center;
+}
+address:first-child {
+    padding-bottom: 5px;
+}
+.fb {
+    padding-right: 20px;
+    font-size: 30px;
+}
+.fb:link {
+    color: #000;
+}
+.fb:visited {
+    color: #000;
+}
+.fb:hover {
+    color: #3b5998;
+    transition: 0.3s; 
+}
+.fb:active {
+    color: #000;
+}
+.insta {
+    font-size: 30px;
+}
+.insta:link {
+    color: #000;
+}
+.insta:visited {
+    color: #000;
+}
+.insta:hover {
+    color: #f77737;
+    transition: 0.3s; 
+}
+.insta:active {
+    color: #000;
+}
+
+/*********************/
+/*** keyframes ***/
+/*********************/
+@keyframes logo {
+    0% {
+        color: transparent;
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+   
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.imglogo {
+    animation-name: logo;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+@keyframes navbar {
+    0% {
+        color: transparent;
+        opacity: 0;
+        transform: translateX(50px);
+    }
+   
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+.nav-bar {
+    animation-name: navbar;
+    animation-duration: 1.5s;
+    animation-delay: 0.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: backwards;
+}
+
+/********************************/
+/*** animate.css ***/
+/********************************/
+
+.js--wp1,
+.js--wp2,
+.js--wp3,
+.js--wp4,
+.js--wp5,
+.js--wp6,
+.js--wp7,
+.js--wp8, 
+.js--wp9, 
+.js--wp10,
+.js--wp11,
+.js--wp12 {
+    opacity: 0;
+    animation-duration: 2.5s;
+}
+.js--wp1.animated,
+.js--wp2.animated,
+.js--wp3.animated,
+.js--wp4.animated,
+.js--wp5.animated,
+.js--wp6.animated,
+.js--wp7.animated,
+.js--wp8.animated,
+.js--wp9.animated,
+.js--wp10.animated,
+.js--wp11.animated,
+.js--wp12.animated {
+    opacity: 1;
+}
+
+/*** sticky ***/
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0 2px 8px #000;
+    z-index: 2;
+    background-image: linear-gradient(rgb(255, 255, 255), rgb(172, 172, 172));
+}
+.sticky .imglogo {
+    width: 7%;
+    margin: 5px;
+}
